@@ -1,4 +1,4 @@
-# Projeto de implementação de estruturas de dados em Java/Spring Boot
+# Estruturas de dados em Java/Spring Boot
 
 Esse projeto contém o back-end das implementações das estruturas:
 
