@@ -14,14 +14,20 @@ Esse projeto contém o back-end das implementações das estruturas:
 - [x] Quick Sort (Recursivo)
 
 
+
+
 - [x] Linked List
 - [x] Queue
 - [x] Stack
 
 
+
+
 - [ ] Busca Linear
 - [ ] Busca Binária
 - [ ] Árvore Binária
+
+
 
 - [ ] Grafo
 - [ ] BFS
