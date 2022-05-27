@@ -20,6 +20,7 @@ Esse projeto contém o back-end das implementações das estruturas:
 - [x] Stack
 <br />
 
+Os itens: 
 - [ ] Busca Linear
 - [ ] Busca Binária
 - [ ] Árvore Binária
@@ -29,10 +30,44 @@ Esse projeto contém o back-end das implementações das estruturas:
 - [ ] BFS
 - [ ] DFS
 
+Também serão adicionadas no futuro.
 
 Para executar o back-end do projeto na sua máquina, digite o seguinte comando:
 ```
 mvn spring-boot:run 
 ```
 
-O front-end desenvolvido em Angular está disponível neste repositório.
+O endereço base das requisições é:
+```
+http://localhost:8080/ 
+```
+
+Caso o código seja rodado epnas pelo back-end é necessário enviar no body o seguintejson:
+
+```
+{
+    "quantidade" : string,
+    "algoritmo" : string
+}
+```
+
+Os valores aceitos para o campo "quantidade" são:
+```
+"quantidade" : "1" - 100 números
+"quantidade" : "2" - 1000 números
+"quantidade" : "3" - 5000 números
+"quantidade" : "4" - 10000 números
+"quantidade" : "5" - 50000 números
+```
+
+Os valores aceitos para o campo "algoritmo" são:
+```
+"algoritmo" : "1" - Bubble Sort
+"algoritmo" : "2" - Insertion Sort
+"algoritmo" : "3" - Selection Sort
+"algoritmo" : "4" - Recursive Heap Sort
+"algoritmo" : "5" - Recursive Quick Sort
+"algoritmo" : "6" - Comparativo entre todos os algoritmos
+```
+
+O front-end desenvolvido em Angular para este projeto está [disponível neste repositório](https://github.com/myllamachaado/data-structures-frontend).
