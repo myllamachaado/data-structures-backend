@@ -26,6 +26,10 @@ Os itens:
 - [ ] Árvore Binária
 <br />
 
+- [ ] Heap Sort (Iterativo)
+- [ ] Quick Sort (Iterativo)
+</br>
+
 - [ ] Grafo
 - [ ] BFS
 - [ ] DFS
@@ -42,7 +46,7 @@ O endereço base das requisições é:
 http://localhost:8080/ 
 ```
 
-Caso o código seja rodado epnas pelo back-end é necessário enviar no body o seguintejson:
+Caso o código seja rodado epnas pelo back-end é necessário enviar no body da requisição o seguinte json:
 
 ```
 {
