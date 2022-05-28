@@ -69,9 +69,10 @@ Os valores aceitos para o campo "algoritmo" são:
 "algoritmo" : "1" - Bubble Sort
 "algoritmo" : "2" - Insertion Sort
 "algoritmo" : "3" - Selection Sort
-"algoritmo" : "4" - Recursive Heap Sort
-"algoritmo" : "5" - Recursive Quick Sort
-"algoritmo" : "6" - Comparativo entre todos os algoritmos
+"algoritmo" : "4" - Shell Sort
+"algoritmo" : "5" - Recursive Heap Sort
+"algoritmo" : "6" - Recursive Quick Sort
+"algoritmo" : "7" - Comparativo entre todos os algoritmos
 ```
 
 O front-end desenvolvido em Angular para este projeto está [disponível neste repositório](https://github.com/myllamachaado/data-structures-frontend).
