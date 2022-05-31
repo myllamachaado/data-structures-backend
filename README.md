@@ -20,12 +20,12 @@ Esse projeto contém o back-end das implementações das estruturas:
 - [x] Stack
 <br />
 
-Os itens: 
-- [ ] Busca Linear
-- [ ] Busca Binária
-- [ ] Árvore Binária
+- [x] Busca Linear
+- [x] Busca Binária
+- [x] Árvore Binária
 <br />
 
+Os itens: 
 - [ ] Heap Sort (Iterativo)
 - [ ] Quick Sort (Iterativo)
 </br>
@@ -41,9 +41,12 @@ Para executar o back-end do projeto na sua máquina, digite o seguinte comando:
 mvn spring-boot:run 
 ```
 
-O endereço base das requisições é:
+
+# Algoritmos de Ordenação
+
+O endereço base das requisições de ordenação é:
 ```
-http://localhost:8080/ 
+http://localhost:8080/api/v1/ordenacao 
 ```
 
 Caso o código seja rodado apenas pelo back-end é necessário enviar no body da requisição o seguinte json:
@@ -76,3 +79,13 @@ Os valores aceitos para o campo "algoritmo" são:
 ```
 
 O front-end desenvolvido em Angular para este projeto está [disponível neste repositório](https://github.com/myllamachaado/data-structures-frontend).
+</br>
+
+# Algoritmos de Busca
+
+O endpoint para os algoritmos de busca será adicionado no futuro.
+
+O endereço base das requisições de ordenação é:
+```
+http://localhost:8080/api/v1/busca 
+```
