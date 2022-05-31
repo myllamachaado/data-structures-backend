@@ -85,7 +85,3 @@ O front-end desenvolvido em Angular para este projeto está [disponível neste r
 
 O endpoint para os algoritmos de busca será adicionado no futuro.
 
-O endereço base das requisições de ordenação é:
-```
-http://localhost:8080/api/v1/busca 
-```
