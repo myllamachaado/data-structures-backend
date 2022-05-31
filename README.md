@@ -46,33 +46,33 @@ O endereço base das requisições é:
 http://localhost:8080/ 
 ```
 
-Caso o código seja rodado epnas pelo back-end é necessário enviar no body da requisição o seguinte json:
+Caso o código seja rodado apenas pelo back-end é necessário enviar no body da requisição o seguinte json:
 
 ```
 {
-    "quantidade" : string,
-    "algoritmo" : string
+    "quantidade" : integer,
+    "algoritmo" : integer
 }
 ```
 
 Os valores aceitos para o campo "quantidade" são:
 ```
-"quantidade" : "1" - 100 números
-"quantidade" : "2" - 1000 números
-"quantidade" : "3" - 5000 números
-"quantidade" : "4" - 10000 números
-"quantidade" : "5" - 50000 números
+"quantidade" : 1 - 100 números
+"quantidade" : 2 - 1000 números
+"quantidade" : 3 - 5000 números
+"quantidade" : 4 - 10000 números
+"quantidade" : 5 - 50000 números
 ```
 
 Os valores aceitos para o campo "algoritmo" são:
 ```
-"algoritmo" : "1" - Bubble Sort
-"algoritmo" : "2" - Insertion Sort
-"algoritmo" : "3" - Selection Sort
-"algoritmo" : "4" - Shell Sort
-"algoritmo" : "5" - Recursive Heap Sort
-"algoritmo" : "6" - Recursive Quick Sort
-"algoritmo" : "7" - Comparativo entre todos os algoritmos
+"algoritmo" : 1 - Bubble Sort
+"algoritmo" : 2 - Insertion Sort
+"algoritmo" : 3 - Selection Sort
+"algoritmo" : 4 - Shell Sort
+"algoritmo" : 5 - Recursive Heap Sort
+"algoritmo" : 6 - Recursive Quick Sort
+"algoritmo" : 7 - Comparativo entre todos os algoritmos
 ```
 
 O front-end desenvolvido em Angular para este projeto está [disponível neste repositório](https://github.com/myllamachaado/data-structures-frontend).
