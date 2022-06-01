@@ -27,7 +27,6 @@ public class SelectionSort implements Ordenacao{
          for (int j = i + 1; j < vetor.length; j++) {
             if(vetor[j] < vetor[menor]){
                menor = j;
-               results.setOperacoes(results.getOperacoes()+1);
             }
          }
          aux = vetor[menor];

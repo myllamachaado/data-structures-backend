@@ -10,14 +10,12 @@ import java.util.ArrayList;
 @Setter
 @ToString
 public class ResponseSearch {
-
+   private int[] vetor;
    private String algotitmo;
-   //Linear search
-   private ArrayList indexes;
-   // Binary Search
    private int index;
    private long tempoInicial;
    private long tempoFinal;
+   private long tempoTotal;
    private int operacoes;
 
 }

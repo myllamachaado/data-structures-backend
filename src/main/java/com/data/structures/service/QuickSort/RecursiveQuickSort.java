@@ -7,7 +7,7 @@ import com.data.structures.service.Ordenacao;
 public class RecursiveQuickSort implements Ordenacao{
 
    public ResponseResults ordenar(int[] vetor, ResponseSort res){
-      return recursiveQuickSort(vetor, 0, vetor.length-1, res);
+      return recursiveQuickSort(vetor, 0, vetor.length, res);
    }
 
    public static ResponseResults recursiveQuickSort(int[] vetor, int left, int right, ResponseSort res){
@@ -15,17 +15,18 @@ public class RecursiveQuickSort implements Ordenacao{
       ResponseResults results = new ResponseResults();
       results.setNomeAlgoritmo("QuickSort Recursivo");
 
-      if(left < right){
-         results.setTempoInicial(System.currentTimeMillis());
+      results.setTempoInicial(System.currentTimeMillis());
 
+      if(left < right){
          int pivot = partition(vetor, left, right, results);
          recursiveQuickSort(vetor, left, pivot, res);
          recursiveQuickSort(vetor, pivot+1, right, res);
-
-         results.setTempoFinal(System.currentTimeMillis());
-         results.setTempoTotal(results.getTempoFinal() - results.getTempoInicial());
-         res.setVetorOrdenado(vetor);
       }
+
+      results.setTempoFinal(System.currentTimeMillis());
+      results.setTempoTotal(results.getTempoFinal() - results.getTempoInicial());
+      res.setVetorOrdenado(vetor);
+
       return results;
    }
 
@@ -34,7 +35,7 @@ public class RecursiveQuickSort implements Ordenacao{
       int p = (int) (left+right)/2;
       int pivot = vetor[p];
       int i = left - 1;
-      int j = right + 1;
+      int j = right;
       while(true){
          do{
             i++;

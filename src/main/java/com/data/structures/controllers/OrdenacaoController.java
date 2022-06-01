@@ -1,26 +1,24 @@
 package com.data.structures.controllers;
 
-import com.data.structures.model.Data;
+import com.data.structures.model.DataOrdenacao;
 import com.data.structures.model.response.ResponseSort;
 import com.data.structures.service.OrdenacaoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
-
 @RestController
-@RequestMapping("/")
-public class IndexController {
+@RequestMapping("/api/v1/ordenacao")
+public class OrdenacaoController {
 
    OrdenacaoService ordenacaoService;
 
-   public IndexController(OrdenacaoService ordenacaoService) {
+   public OrdenacaoController(OrdenacaoService ordenacaoService) {
       this.ordenacaoService = ordenacaoService;
    }
 
    @PostMapping("")
-   public ResponseEntity<ResponseSort> executar(@Valid @RequestBody Data data){
-      return ResponseEntity.ok(ordenacaoService.ordenacao(data));
+   public ResponseEntity<ResponseSort> executar(@RequestBody DataOrdenacao dataOrdenacao){
+      return ResponseEntity.ok(ordenacaoService.ordenacao(dataOrdenacao));
    }
 
 }
