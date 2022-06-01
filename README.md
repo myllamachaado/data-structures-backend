@@ -83,5 +83,34 @@ O front-end desenvolvido em Angular para este projeto está [disponível neste r
 
 # Algoritmos de Busca
 
-O endpoint para os algoritmos de busca será adicionado no futuro.
+O endereço base das requisições de ordenação é:
+```
+http://localhost:8080/api/v1/busca 
+```
 
+Caso o código seja rodado apenas pelo back-end é necessário enviar no body da requisição o seguinte json:
+
+```
+{
+    "quantidade" : integer,
+    "algoritmo" : integer,
+    "numeroBuscado" : integer
+}
+```
+
+Os valores aceitos para o campo "quantidade" são:
+```
+"quantidade" : 1 - 100 números
+"quantidade" : 2 - 1000 números
+"quantidade" : 3 - 5000 números
+"quantidade" : 4 - 10000 números
+"quantidade" : 5 - 50000 números
+```
+
+Os valores aceitos para o campo "algoritmo" são:
+```
+"algoritmo" : 1 - Busca Linear
+"algoritmo" : 2 - Busca Binária
+```
+
+O campo "numeroBuscado" é justamente o número que será buscado na lista gerada. A lista gera números de 1 a 1.000.000
